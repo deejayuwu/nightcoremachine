@@ -1,7 +1,8 @@
 {
   "name": "nightcore-machine",
   "compatibility_date": "2025-11-19",
-  "site": {
-    "bucket": "."
+  "main": "src/index.js",
+  "assets": {
+    "directory": "."
   }
 }
