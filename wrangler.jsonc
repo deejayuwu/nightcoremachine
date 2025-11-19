@@ -1,7 +1,5 @@
 {
   "name": "nightcore-machine",
-  "type": "javascript",
-  "main": "src/index.ts",
   "compatibility_date": "2025-11-19",
   "site": {
     "bucket": "."
