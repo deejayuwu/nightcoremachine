@@ -139,8 +139,23 @@ Contributions welcome! Found a bug? Want a feature? [Open an issue](https://gith
 - **Artwork Fetches**: To waifu.im only (external API)
 
 ## License
+**Project license:** The code and assets in this repository authored by DJ UWU are licensed under the
+Creative Commons Attribution-NonCommercial 4.0 International (`CC BY-NC 4.0`). This permits others to
+share and adapt the material for non-commercial purposes, provided appropriate credit is given and changes
+are indicated. Commercial use (including selling, charging for access, or bundling in a paid service)
+is prohibited without a separate commercial license from the author.
 
-Free to use, modify, and redistribute. See repository for licensing details.
+**Third-party libraries:** This project bundles third-party libraries that are licensed separately:
+
+- `js/lame.min.js` (lamejs) — LGPL-3.0 (see `LICENSES/lgpl-3.0.txt` and `THIRD_PARTY_NOTICES.md`)
+- `js/jsmediatags.min.js` (jsmediatags) — BSD-3-Clause (see `LICENSES/bsd-3-clause.txt` and `THIRD_PARTY_NOTICES.md`)
+
+Please review `THIRD_PARTY_NOTICES.md` and the license texts in the `LICENSES/` directory for obligations
+when redistributing this project. If you need a commercial license for this software, contact the author at
+`deejayuwu@gmail.com` to request terms.
+
+**User-uploaded content:** Users are responsible for copyrights and rights in any files they upload.
+This project does not claim ownership of user uploads.
 
 ## Support
 
