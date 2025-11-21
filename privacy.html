@@ -1,199 +1,122 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Política de Privacidad - DJ UWU NIGHTCORE MACHINE</title>
-  <meta name="description" content="Política de privacidad de DJ UWU Nightcore Machine" />
-  <meta name="theme-color" content="#ff7bc0" />
-  <link rel="canonical" href="https://djuwu.club/privacy.html" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
-  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de Privacidad | DJ UWU Nightcore Machine</title>
+  <meta name="description" content="Política de privacidad de DJ UWU Nightcore Machine. Aprende cómo protegemos tus datos.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#ff7bc0">
+  <link rel="canonical" href="https://djuwu.club/privacy.html">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/icon-192.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="images/icon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
   <style>
-    :root{
-      --pink:#ff7bc0;
-      --violet:#8a6cff;
-      --bg1:#ffe9f5;
-      --bg2:#e9f0ff;
-      --text:#2a2a2a;
-      --glass: rgba(255,255,255,0.65);
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0}
-    body{
-      font-family:'Poppins',system-ui,Segoe UI,Arial,sans-serif;
-      color:var(--text);
-      background: linear-gradient(135deg,var(--bg1),var(--bg2));
-      min-height:100vh;
-      line-height:1.6;
-      position:relative;
-      overflow-x:hidden;
-    }
-    #bg{
-      position:fixed; inset:0;
-      background-size:cover;
-      background-position:center;
-      opacity:0.25; filter: blur(6px) saturate(1.1);
-      transition: background-image .6s ease;
-      z-index:-2;
-    }
-    #particles{ position:fixed; inset:0; pointer-events:none; z-index:-1 }
-    .particle{ position:absolute; font-size:18px; animation: floatUp linear forwards }
-    @keyframes floatUp{
-      from{ transform:translateY(20px); opacity:0 }
-      10%{ opacity:1 }
-      to{ transform:translateY(-100vh) rotate(360deg); opacity:0 }
-    }
-    .topbar{
-      display:flex;align-items:center;justify-content:space-between;gap:12px;
-      padding:12px 18px; backdrop-filter: blur(8px);
-      background: linear-gradient(90deg, rgba(255,255,255,.6), rgba(255,255,255,.3));
-      border-bottom:1px solid rgba(255,255,255,.4);
-    }
-    .brand{ display:flex; align-items:center; gap:10px }
-    .logo{ 
-      width:28px; 
-      height:28px; 
-      border-radius:8px;
-      object-fit:contain;
-      display:block;
-    }
-    .topbar h1{ margin:0; font-size:1.05rem; color:#5b4dd6 }
-    .back-link{
-      text-decoration:none; color:#5b4dd6; font-weight:700;
-      padding:8px 16px; border-radius:999px;
-      background:rgba(255,255,255,0.6);
-      transition:all 0.3s;
-    }
-    .back-link:hover{ background:rgba(255,255,255,0.9); }
-    
-    .container{
-      max-width:800px; margin:40px auto; padding:0 20px;
-    }
-    .content{
-      background:var(--glass); 
-      border-radius:16px; 
-      padding:40px;
-      box-shadow:0 10px 30px rgba(0,0,0,.08);
-    }
-    h1{ color:#5b4dd6; margin-top:0; font-size:2rem; }
-    h2{ color:#7b5cff; margin-top:30px; font-size:1.4rem; }
-    h3{ color:#8a6cff; margin-top:20px; font-size:1.1rem; }
-    p{ margin:12px 0; color:#444; }
-    ul{ padding-left:24px; }
-    li{ margin:8px 0; }
-    .update-date{
-      color:#888; font-size:0.9rem; font-style:italic;
-    }
-    a{ color:#7b5cff; text-decoration:none; }
-    a:hover{ text-decoration:underline; }
-    
-    .footer{
-      text-align:center; padding:24px; color:#6f6f6f; font-size:.85rem;
-    }
-    
-    @media (max-width:600px){
-      .content{ padding:24px; }
-      h1{ font-size:1.6rem; }
-      .topbar h1{ font-size:.95rem; }
-    }
+    .legal-page { max-width: 800px; margin: 2rem auto; padding: 0 1.5rem; }
+    .legal-page h1 { margin-top: 0; margin-bottom: 1rem; }
+    .legal-page h2 { margin-top: 1.5rem; margin-bottom: 0.5rem; }
+    .legal-page p { margin-bottom: 1rem; }
+    .legal-page ul { margin-left: 1.5rem; margin-bottom: 1rem; }
+    .legal-page li { margin-bottom: 0.5rem; }
   </style>
 </head>
 <body>
   <div id="bg" aria-hidden="true"></div>
 
-  <header class="topbar">
+  <header class="topbar" role="banner">
     <div class="brand">
-      <img src="logo.png" alt="DJ UWU Logo" class="logo" />
-      <h1>DJ UWU NIGHTCORE MACHINE</h1>
+      <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.5rem; color: inherit;">
+        <img src="images/logo.png" alt="DJ UWU Logo" class="logo">
+        <span class="brand-name">DJ UWU NIGHTCORE MACHINE</span>
+      </a>
     </div>
-    <a href="/" class="back-link">← Volver</a>
   </header>
 
-  <div class="container">
-    <div class="content">
-      <h1>Política de Privacidad (◕‿◕)♡</h1>
-      <p class="update-date">Última actualización: 31 de octubre de 2025</p>
+  <main class="legal-page" role="main">
+    <h1>Política de Privacidad</h1>
+    <p><strong>Última actualización: 21 de noviembre de 2025</strong></p>
 
-      <h2>1. Introducción</h2>
-      <p>Bienvenido a DJ UWU Nightcore Machine. Esta política de privacidad explica cómo recopilamos, usamos y protegemos tu información cuando usas nuestro servicio de conversión de audio a nightcore.</p>
+    <h2>1. Introducción</h2>
+    <p>
+      En DJ UWU Nightcore Machine ("nosotros" o "el sitio"), respetamos tu privacidad. Esta Política de Privacidad 
+      explica cómo recopilamos, usamos y protegemos tus datos personales.
+    </p>
 
-      <h2>2. Información que Recopilamos</h2>
-      
-      <h3>2.1 Información de Uso Automática</h3>
-      <ul>
-        <li><strong>Cookies y tecnologías similares:</strong> Utilizamos cookies esenciales para mejorar tu experiencia</li>
-        <li><strong>Datos de navegación:</strong> Dirección IP, tipo de navegador, páginas visitadas, tiempo de permanencia (solo para análisis básico)</li>
-      </ul>
+    <h2>2. Procesamiento Local</h2>
+    <p>
+      <strong>El procesamiento de audio ocurre 100% en tu dispositivo.</strong> No enviamos archivos de audio a nuestros 
+      servidores. Todo ocurre localmente en tu navegador usando la Web Audio API.
+    </p>
 
-      <h3>2.2 Archivos de Audio</h3>
-      <ul>
-        <li><strong>Procesamiento local:</strong> Todos los archivos de audio que subes se procesan <strong>completamente en tu navegador</strong></li>
-        <li><strong>No almacenamos tus archivos:</strong> Ningún archivo de audio se envía a nuestros servidores ni se almacena</li>
-        <li><strong>Privacidad total:</strong> Tus canciones permanecen privadas en tu dispositivo en todo momento</li>
-      </ul>
+    <h2>3. Datos que Recopilamos</h2>
+    <ul>
+      <li><strong>Cloudflare Analytics:</strong> Información anónima sobre visitantes (país, navegador, dispositivo).</li>
+      <li><strong>Google Analytics (opcional):</strong> Si aceptas, recopilamos datos sobre cómo usas el sitio (páginas visitadas, tiempo en sitio, etc.). NO se incluye tu ubicación exacta ni información personal identificable.</li>
+      <li><strong>Cookies:</strong> Solo cookies esenciales para el funcionamiento del sitio. Google Analytics usa cookies si está habilitado.</li>
+    </ul>
 
-      <h2>3. Cómo Usamos tu Información</h2>
-      <ul>
-        <li>Proporcionar y mejorar nuestro servicio de conversión nightcore</li>
-        <li>Analizar el uso del sitio para mejorarlo</li>
-        <li>Garantizar la seguridad de la plataforma</li>
-      </ul>
+    <h2>4. Cómo Usamos tus Datos</h2>
+    <ul>
+      <li>Mejorar la experiencia del usuario y el rendimiento del sitio.</li>
+      <li>Entender qué características son más populares.</li>
+      <li>Detectar y prevenir problemas técnicos.</li>
+    </ul>
 
-      <h2>4. Cookies</h2>
-      <p>Usamos cookies esenciales para:</p>
-      <ul>
-        <li>Recordar tus preferencias</li>
-        <li>Mejorar la funcionalidad del sitio</li>
-      </ul>
-      <p>Puedes controlar las cookies desde la configuración de tu navegador. Al continuar usando nuestro sitio, aceptas el uso de cookies esenciales.</p>
+    <h2>5. Terceros y Compartición de Datos</h2>
+    <p>
+      <strong>No vendemos tus datos.</strong> Los datos se comparten únicamente con:
+    </p>
+    <ul>
+      <li><strong>Cloudflare:</strong> Nuestro proveedor CDN (obligatorio para el sitio).</li>
+      <li><strong>Google Analytics:</strong> Solo si lo aceptas explícitamente.</li>
+    </ul>
 
-      <h2>5. Fondos de Anime</h2>
-      <p>Utilizamos la API de <a href="https://waifu.pics" target="_blank">waifu.pics</a> para mostrar fondos de anime. Esta API puede registrar solicitudes básicas según su propia política de privacidad.</p>
+    <h2>6. Derechos de Usuario</h2>
+    <p>Tienes derecho a:</p>
+    <ul>
+      <li>Acceder a tus datos personales.</li>
+      <li>Solicitar la eliminación de tus datos.</li>
+      <li>Oponerme al procesamiento de datos.</li>
+      <li>Cambiar tus preferencias de cookies en cualquier momento.</li>
+    </ul>
+    <p>Para ejercer estos derechos, contacta: <strong>deejayuwu@gmail.com</strong></p>
 
-      <h2>6. Tus Derechos</h2>
-      <p>Tienes derecho a:</p>
-      <ul>
-        <li>Acceder a tu información personal</li>
-        <li>Solicitar la corrección de datos incorrectos</li>
-        <li>Solicitar la eliminación de tus datos</li>
-        <li>Oponerte al procesamiento de datos</li>
-        <li>Desactivar cookies desde tu navegador</li>
-      </ul>
+    <h2>7. Seguridad</h2>
+    <p>
+      Protegemos tu información mediante conexiones HTTPS encriptadas. Sin embargo, ningún sitio es 100% seguro. 
+      Si descubres una vulnerabilidad, contacta: <strong>deejayuwu@gmail.com</strong>
+    </p>
 
-      <h2>8. Seguridad</h2>
-      <p>Implementamos medidas de seguridad para proteger tu información. Sin embargo, ningún método de transmisión por internet es 100% seguro.</p>
+    <h2>8. Cambios en esta Política</h2>
+    <p>
+      Podemos actualizar esta política ocasionalmente. Las actualizaciones entrarán en vigor cuando se publiquen en 
+      el sitio. Te recomendamos revisar esta política periódicamente.
+    </p>
 
-      <h2>9. Enlaces Externos</h2>
-      <p>Nuestro sitio puede contener enlaces a sitios externos (Twitter, Instagram, SoundCloud). No somos responsables de las prácticas de privacidad de estos sitios.</p>
+    <h2>9. Contacto</h2>
+    <p>
+      Si tienes preguntas sobre esta Política de Privacidad, contacta:<br>
+      <strong>Email:</strong> deejayuwu@gmail.com
+    </p>
 
-      <h2>10. Menores de Edad</h2>
-      <p>Nuestro servicio es para todos los públicos. No recopilamos intencionalmente información personal de menores de 13 años sin el consentimiento parental.</p>
-
-      <h2>11. Cambios a esta Política</h2>
-      <p>Podemos actualizar esta política ocasionalmente. Te notificaremos de cambios significativos publicando la nueva política en esta página con una fecha de actualización.</p>
-
-      <h2>12. Contacto</h2>
-      <p>Si tienes preguntas sobre esta política de privacidad, contáctanos en:</p>
-      <ul>
-        <li>Twitter: <a href="https://twitter.com/deejayuwu" target="_blank">@deejayuwu</a></li>
-        <li>Instagram: <a href="https://instagram.com/deejayuwu" target="_blank">@deejayuwu</a></li>
-      </ul>
-
-      <p style="margin-top:40px;padding-top:20px;border-top:1px solid #ddd;color:#888;">
-        Al usar DJ UWU Nightcore Machine, aceptas esta Política de Privacidad ✨
-      </p>
-    </div>
-  </div>
+    <p style="margin-top: 2rem; text-align: center;">
+      <a href="index.html">← Volver al inicio</a>
+    </p>
+  </main>
 
   <footer class="footer">
-    <small>Hecho con amor por DJ UWU · Fondos por waifu.pics · © 2025</small>
+    <small>
+      <a href="privacy.html" rel="nofollow">Política de Privacidad</a> · 
+      <a href="terms.html" rel="nofollow">Términos de Uso</a> · 
+      <a href="contact.html">Contacto</a> · 
+      © 2025 DJ UWU
+    </small>
   </footer>
 
   <div id="particles" aria-hidden="true"></div>
-
-  <script src="bg-script.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
