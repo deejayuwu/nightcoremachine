@@ -65,9 +65,10 @@ const translations = {
     cookieMore: "Más información",
     cookieAccept: "Aceptar Analytics",
     cookieReject: "Solo esenciales",
-    
+
     // Language
     langButton: "EN",
+    backToPortfolio: "← Volver al portfolio",
     
     // Error messages
     errorInvalidFile: "Por favor, selecciona un archivo de audio válido (MP3, WAV, AAC, FLAC, M4A, etc.)",
@@ -150,9 +151,10 @@ const translations = {
     cookieMore: "More information",
     cookieAccept: "Accept Analytics",
     cookieReject: "Essential only",
-    
+
     // Language
     langButton: "ES",
+    backToPortfolio: "← Back to portfolio",
     
     // Error messages
     errorInvalidFile: "Please select a valid audio file (MP3, WAV, AAC, FLAC, M4A, etc.)",
