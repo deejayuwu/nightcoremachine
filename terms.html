@@ -15,60 +15,65 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body data-page="terms">
   <div id="bg" aria-hidden="true"></div>
 
   <header class="topbar" role="banner">
-    <div class="brand">
-      <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.5rem; color: inherit;">
-        <img src="images/logo.png" alt="DJ UWU Logo" class="logo">
-        <span class="brand-name">DJ UWU NIGHTCORE MACHINE</span>
-      </a>
+    <div class="topbar-inner">
+      <div class="brand">
+        <a href="index.html" class="brand-link">
+          <img src="images/logo.png" alt="DJ UWU Logo" class="logo">
+          <span class="brand-name">DJ UWU</span>
+        </a>
+      </div>
+      <div class="topbar-actions" aria-label="Navegación principal" role="navigation">
+        <button id="langToggle" class="lang-toggle" type="button" aria-label="Cambiar idioma" title="Cambiar idioma">EN</button>
+      </div>
     </div>
   </header>
 
   <main class="legal-page" role="main">
     <section style="max-width:800px;margin:40px auto;padding:0 20px;">
       <div style="background:rgba(255,255,255,0.65);border-radius:16px;padding:40px;box-shadow:0 10px 30px rgba(0,0,0,.08);">
-        <h1 style="color:#5b4dd6;margin-top:0;font-size:2rem;">Términos de Uso</h1>
-        <p style="margin:12px 0;color:#444;"><strong>Última actualización: 21 de noviembre de 2025</strong></p>
+        <h1 id="termsHeading" style="color:#5b4dd6;margin-top:0;font-size:2rem;">Términos de Uso</h1>
+        <p id="termsUpdated" style="margin:12px 0;color:#444;"><strong>Última actualización: 21 de noviembre de 2025</strong></p>
 
-        <h2 style="color:#7b5cff;margin-top:30px;font-size:1.4rem;">1. Aceptación de los Términos</h2>
-        <p style="margin:12px 0;color:#444;">Al acceder y usar DJ UWU Nightcore Machine ("el Servicio"), aceptas estar sujeto a estos Términos de Uso. Si no estás de acuerdo con alguna parte de estos términos, no uses el Servicio.</p>
+        <h2 id="acceptanceTitle" style="color:#7b5cff;margin-top:30px;font-size:1.4rem;">1. Aceptación de los Términos</h2>
+        <p id="acceptanceText" style="margin:12px 0;color:#444;">Al acceder y usar DJ UWU Nightcore Machine ("el Servicio"), aceptas estar sujeto a estos Términos de Uso. Si no estás de acuerdo con alguna parte de estos términos, no uses el Servicio.</p>
 
-        <h2 style="color:#7b5cff;margin-top:30px;font-size:1.4rem;">2. Descripción del Servicio</h2>
-        <p style="margin:12px 0;color:#444;">DJ UWU Nightcore Machine es una herramienta web gratuita que permite a los usuarios ajustar la velocidad y tono de archivos de audio localmente en su navegador.</p>
+        <h2 id="descriptionTitle" style="color:#7b5cff;margin-top:30px;font-size:1.4rem;">2. Descripción del Servicio</h2>
+        <p id="descriptionText" style="margin:12px 0;color:#444;">DJ UWU Nightcore Machine es una herramienta web gratuita que permite a los usuarios ajustar la velocidad y tono de archivos de audio localmente en su navegador.</p>
 
-        <h2 style="color:#7b5cff;margin-top:30px;font-size:1.4rem;">3. Uso del Servicio</h2>
-        <h3 style="color:#5b4dd6;margin-top:20px;font-size:1.1rem;">3.1 Procesamiento Local</h3>
-        <p style="margin:12px 0;color:#444;">Todo el procesamiento de audio se realiza <strong>localmente en tu navegador</strong>. Ningún archivo se sube a nuestros servidores.</p>
+        <h2 id="usageTitle" style="color:#7b5cff;margin-top:30px;font-size:1.4rem;">3. Uso del Servicio</h2>
+        <h3 id="localProcessingTitle" style="color:#5b4dd6;margin-top:20px;font-size:1.1rem;">3.1 Procesamiento Local</h3>
+        <p id="localProcessingText" style="margin:12px 0;color:#444;">Todo el procesamiento de audio se realiza <strong>localmente en tu navegador</strong>. Ningún archivo se sube a nuestros servidores.</p>
 
-        <h3 style="color:#5b4dd6;margin-top:20px;font-size:1.1rem;">3.2 Uso Permitido</h3>
-        <p style="margin:12px 0;color:#444;">Puedes usar este servicio para uso personal, educativo y creativo, siempre que respetes los derechos de copyright.</p>
+        <h3 id="permittedUseTitle" style="color:#5b4dd6;margin-top:20px;font-size:1.1rem;">3.2 Uso Permitido</h3>
+        <p id="permittedUseText" style="margin:12px 0;color:#444;">Puedes usar este servicio para uso personal, educativo y creativo, siempre que respetes los derechos de copyright.</p>
 
-        <h2 style="color:#7b5cff;margin-top:30px;font-size:1.4rem;">4. Derechos de Autor</h2>
-        <p style="margin:12px 0;color:#444;"><strong>⚠️ IMPORTANTE:</strong> Eres el único responsable de asegurarte de tener los derechos necesarios para modificar y usar cualquier audio que proceses.</p>
+        <h2 id="copyrightTitle" style="color:#7b5cff;margin-top:30px;font-size:1.4rem;">4. Derechos de Autor</h2>
+        <p id="copyrightText" style="margin:12px 0;color:#444;"><strong>⚠️ IMPORTANTE:</strong> Eres el único responsable de asegurarte de tener los derechos necesarios para modificar y usar cualquier audio que proceses.</p>
 
-        <h2 style="color:#7b5cff;margin-top:30px;font-size:1.4rem;">5. Limitación de Responsabilidad</h2>
-        <p style="margin:12px 0;color:#444;">El Servicio se proporciona "tal como está" sin garantías de ningún tipo. No seremos responsables por pérdida de datos, infracciones de derechos de autor o daños directos/indirectos.</p>
+        <h2 id="liabilityTitle" style="color:#7b5cff;margin-top:30px;font-size:1.4rem;">5. Limitación de Responsabilidad</h2>
+        <p id="liabilityText" style="margin:12px 0;color:#444;">El Servicio se proporciona "tal como está" sin garantías de ningún tipo. No seremos responsables por pérdida de datos, infracciones de derechos de autor o daños directos/indirectos.</p>
 
-        <h2 style="color:#7b5cff;margin-top:30px;font-size:1.4rem;">6. Servicio Gratuito</h2>
-        <p style="margin:12px 0;color:#444;">Este servicio es <strong>100% gratuito</strong>. Las donaciones a través de Ko-fi son completamente voluntarias y opcionas.</p>
+        <h2 id="freeServiceTitle" style="color:#7b5cff;margin-top:30px;font-size:1.4rem;">6. Servicio Gratuito</h2>
+        <p id="freeServiceText" style="margin:12px 0;color:#444;">Este servicio es <strong>100% gratuito</strong>. Las donaciones a través de Ko-fi son completamente voluntarias y opcionales.</p>
 
-        <h2 style="color:#7b5cff;margin-top:30px;font-size:1.4rem;">7. Privacidad</h2>
-        <p style="margin:12px 0;color:#444;">Lee nuestra <a href="privacy.html" style="color:#7b5cff;text-decoration:none;font-weight:600;">Política de Privacidad</a> para entender cómo manejamos tu información.</p>
+        <h2 id="privacyTitle" style="color:#7b5cff;margin-top:30px;font-size:1.4rem;">7. Privacidad</h2>
+        <p id="privacyText" style="margin:12px 0;color:#444;">Lee nuestra <a id="privacyInline" href="privacy.html" style="color:#7b5cff;text-decoration:none;font-weight:600;">Política de Privacidad</a> para entender cómo manejamos tu información.</p>
 
-        <h2 style="color:#7b5cff;margin-top:30px;font-size:1.4rem;">8. Modificaciones</h2>
-        <p style="margin:12px 0;color:#444;">Nos reservamos el derecho de modificar o discontinuar el servicio en cualquier momento y cambiar estos términos con previo aviso.</p>
+        <h2 id="modificationsTitle" style="color:#7b5cff;margin-top:30px;font-size:1.4rem;">8. Modificaciones</h2>
+        <p id="modificationsText" style="margin:12px 0;color:#444;">Nos reservamos el derecho de modificar o discontinuar el servicio en cualquier momento y cambiar estos términos con previo aviso.</p>
 
-        <h2 style="color:#7b5cff;margin-top:30px;font-size:1.4rem;">9. Ley Aplicable</h2>
-        <p style="margin:12px 0;color:#444;">Estos términos se rigen por la ley española. Cualquier disputa se resolverá según la jurisdicción pertinente.</p>
+        <h2 id="lawTitle" style="color:#7b5cff;margin-top:30px;font-size:1.4rem;">9. Ley Aplicable</h2>
+        <p id="lawText" style="margin:12px 0;color:#444;">Estos términos se rigen por la ley española. Cualquier disputa se resolverá según la jurisdicción pertinente.</p>
 
-        <h2 style="color:#7b5cff;margin-top:30px;font-size:1.4rem;">10. Contacto</h2>
-        <p style="margin:12px 0;color:#444;">Si tienes preguntas sobre estos términos, contacta: <strong>deejayuwu@gmail.com</strong></p>
+        <h2 id="contactTitle" style="color:#7b5cff;margin-top:30px;font-size:1.4rem;">10. Contacto</h2>
+        <p id="contactText" style="margin:12px 0;color:#444;">Si tienes preguntas sobre estos términos, contacta: <strong>deejayuwu@gmail.com</strong></p>
 
         <p style="margin-top:2rem;text-align:center;">
-          <a href="index.html" style="color:#7b5cff;text-decoration:none;font-weight:600;">← Volver al inicio</a>
+          <a id="backHome" href="index.html" style="color:#7b5cff;text-decoration:none;font-weight:600;">← Volver al inicio</a>
         </p>
       </div>
     </section>
@@ -76,14 +81,15 @@
 
   <footer class="footer">
     <small>
-      <a href="privacy.html" rel="nofollow">Política de Privacidad</a> · 
-      <a href="terms.html" rel="nofollow">Términos de Uso</a> · 
-      <a href="contact.html">Contacto</a> · 
-      © 2025 DJ UWU
+      <a id="privacyLink" href="privacy.html" rel="nofollow">Política de Privacidad</a> ·
+      <a id="termsLink" href="terms.html" rel="nofollow">Términos de Uso</a> ·
+      <a id="contactLink" href="contact.html">Contacto</a> ·
+      <span id="footerText">© 2025 DJ UWU</span>
     </small>
   </footer>
 
   <div id="particles" aria-hidden="true"></div>
+  <script src="js/legal.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
