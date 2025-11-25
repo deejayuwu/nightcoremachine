@@ -76,6 +76,31 @@ body{
   display: inline-flex;
   align-items: center;
 }
+.topbar-cta{
+  padding: 8px 14px;
+  border-radius: 12px;
+  background: linear-gradient(135deg,var(--pink),var(--violet));
+  color: #fff !important;
+  border: 1px solid rgba(138,108,255,0.3);
+  box-shadow: 0 6px 20px rgba(138,108,255,0.2);
+  gap: 6px;
+}
+.topbar-cta:hover{
+  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(138,108,255,0.28);
+}
+.topbar-cta--ghost{
+  background: rgba(255,255,255,0.8);
+  color: #5b4dd6 !important;
+  border: 1px solid rgba(138,108,255,0.25);
+  box-shadow: none;
+}
+.topbar-cta--ghost:hover{
+  background: linear-gradient(135deg, rgba(255,123,192,0.15), rgba(138,108,255,0.18));
+  color: #5b4dd6;
+  box-shadow: 0 6px 18px rgba(138,108,255,0.18);
+}
 .social a:hover{
   transform: translateY(-2px);
   opacity: 0.8;
