@@ -1,0 +1,16 @@
+{
+  "name": "DJ UWU Nightcore Machine",
+  "short_name": "Nightcore",
+  "start_url": "/machine.html",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0d0b1e",
+  "theme_color": "#ff7bc0",
+  "icons": [
+    {
+      "src": "/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

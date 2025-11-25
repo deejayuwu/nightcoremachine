@@ -1,0 +1,292 @@
+<!DOCTYPE html><html lang="es"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DJ UWU Nightcore Machine | Crear Nightcore Online Gratis</title>
+  <meta name="description" content="Crea nightcore y daycore gratis online con DJ UWU Nightcore Machine. Procesamiento local, privado y sin límites para acelerar o ralentizar canciones y descargar en WAV o MP3.">
+  <meta name="keywords" content="nightcore, convertidor nightcore, hacer nightcore online, nightcore gratis, daycore, acelerar canciones, cambiar velocidad audio, nightcore generator, nightcore maker">
+  <meta name="author" content="DJ UWU">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="theme-color" content="#ff7bc0">
+  <meta property="og:title" content="DJ UWU Nightcore Machine | Crear Nightcore Online Gratis">
+  <meta property="og:description" content="Crea nightcore gratis en segundos. Ajusta la velocidad y el tono, descarga en WAV o MP3 y mantén tu música privada.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="DJ UWU Nightcore Machine - Crear Nightcore Online Gratis">
+  <meta property="og:url" content="https://djuwu.club/machine.html">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:site_name" content="DJ UWU Nightcore Machine">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DJ UWU Nightcore Machine | Crear Nightcore Online Gratis">
+  <meta name="twitter:description" content="Procesa nightcore y daycore sin subir archivos. Descarga en WAV o MP3 con calidad alta.">
+  <meta name="twitter:image" content="https://djuwu.club/images/og.png">
+  <meta name="twitter:site" content="@deejayuwu">
+  
+  <!-- Canonical URL to prevent duplicate content issues -->
+  <link rel="canonical" href="https://djuwu.club/machine.html">
+  
+  <!-- Favicon and PWA icons -->
+  <link rel="icon" type="image/png" sizes="192x192" href="images/icon-192.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="images/icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- LameJS for MP3 encoding -->
+  <script src="js/lame.min.js"></script>
+  
+  <!-- ID3Writer for MP3 metadata - trying different approach -->
+  <script src="js/jsmediatags.min.js"></script>
+  
+  <!-- Google Analytics 4 will be loaded dynamically in app.js after user accepts cookies -->
+  <!-- Get your GA4 Measurement ID from: https://analytics.google.com/ -->
+  
+  <!-- Translations -->
+  <script src="js/translations.js"></script>
+  <script src="js/i18n.js"></script>
+  
+  <!-- Structured Data (JSON-LD) for SEO -->
+  <script type="application/ld+json" id="structuredData">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "DJ UWU Nightcore Machine",
+    "description": "Crea nightcore y daycore online gratis. Ajusta la velocidad de tus canciones al instante sin instalar programas.",
+    "url": "https://djuwu.club/machine.html",
+    "applicationCategory": "MultimediaApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "ratingCount": "127"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "DJ UWU"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div id="bg" aria-hidden="true"></div>
+
+  <header class="topbar" role="banner">
+    <div class="brand">
+      <img src="images/logo.png" alt="DJ UWU Logo" class="logo">
+      <span class="brand-name">DJ UWU NIGHTCORE MACHINE</span>
+    </div>
+    <nav class="social" aria-label="Redes sociales">
+      <button id="langToggle" class="lang-toggle" aria-label="Cambiar idioma" title="Cambiar idioma">ES</button>
+      <a href="https://twitter.com/deejayuwu" target="_blank" rel="noopener" class="social-link">
+        <span class="social-text-full">Twitter</span>
+        <span class="social-text-short">🐦</span>
+      </a>
+      <a href="https://instagram.com/deejayuwu" target="_blank" rel="noopener" class="social-link">
+        <span class="social-text-full">Instagram</span>
+        <span class="social-text-short">📸</span>
+      </a>
+      <a href="https://soundcloud.com/djuwu" target="_blank" rel="noopener" class="social-link">
+        <span class="social-text-full">SoundCloud</span>
+        <span class="social-text-short">🎵</span>
+      </a>
+      <!-- Ko-fi Cute Link -->
+      <a href="https://ko-fi.com/djuwu" target="_blank" rel="noopener" class="social-link ko-fi-link" onclick="if(typeof trackEvent !== 'undefined') trackEvent('kofi_clicked', {'location': 'header'});">
+        <span class="social-text-full">☕ Ko-fi</span>
+        <span class="social-text-short">☕</span>
+      </a>
+    </nav>
+  </header>
+
+  <div class="main-wrapper">
+    <main class="container" role="main">
+      <!-- Hero Section: Tool First (Better UX) -->
+      <section class="hero-section">
+        <h1 class="hero-title" data-i18n="heroTitle">Crea Nightcore y Daycore Online Gratis ✨</h1>
+        <p class="hero-subtitle" data-i18n="heroSubtitle">Procesamiento local • 100% privado • Sin límites</p>
+      </section>
+
+      <section class="uploader" id="uploadArea" aria-label="Zona de subida">
+        <div class="drop">
+          <h2 class="upload-title" data-i18n="uploadTitle">Arrastra tu canción aquí ✨</h2>
+          <p data-i18n="uploadOr">o</p>
+          <button id="browseBtn" aria-controls="fileInput" data-i18n="browseBtn">Explorar archivos</button>
+          <input type="file" id="fileInput" accept="audio/*,.mp3,.wav,.aac,.flac,.m4a,.ogg,.webm,.mp4" hidden="">
+          <p class="formats" data-i18n="formats">MP3, WAV, AAC, FLAC, M4A</p>
+          <p class="ios-help" style="font-size:0.85rem; color:#666; margin-top:8px; display:none;" data-i18n="iosHelp">
+            💡 En iOS: Selecciona desde "Archivos" o "Música" en el selector
+          </p>
+        </div>
+      </section>
+
+      <section class="controls" id="controls" hidden="">
+        <div class="track-info" aria-live="polite">
+          <span id="trackName">Canción</span>
+        </div>
+
+        <!-- Waveform Visualizer -->
+        <div class="waveform-container">
+          <canvas id="waveformCanvas"></canvas>
+        </div>
+
+        <div class="player">
+          <button id="playBtn" aria-label="Reproducir" data-i18n="playBtn">Reproducir</button>
+          <button id="pauseBtn" aria-label="Pausar" hidden="" data-i18n="pauseBtn">Pausar</button>
+          <div class="timeline" aria-label="Línea de tiempo">
+            <span id="currentTime">0:00</span>
+            <div class="progress-bar" id="progressBar" role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0">
+              <div class="progress" id="progress"></div>
+            </div>
+            <span id="totalTime">0:00</span>
+          </div>
+        </div>
+
+        <!-- Mode Toggle: Nightcore / Daycore -->
+        <div class="mode-toggle-container">
+          <label class="mode-toggle-label" data-i18n="modeLabel">Modo:</label>
+          <div class="mode-toggle">
+            <button id="nightcoreBtn" class="mode-btn active" aria-pressed="true">🌙 Nightcore</button>
+            <button id="daycoreBtn" class="mode-btn" aria-pressed="false">☀️ Daycore</button>
+          </div>
+        </div>
+
+        <!-- Speed Presets -->
+        <div class="presets-container">
+          <label class="presets-label" data-i18n="presetsLabel">Presets DJ UWU:</label>
+          <div class="presets-buttons">
+            <button class="preset-btn" data-speed="1.20" data-label="Classic">Classic (1.20x)</button>
+            <button class="preset-btn active" data-speed="1.25" data-label="Perfect">Perfect (1.25x)</button>
+            <button class="preset-btn" data-speed="1.35" data-label="Hyper">Hyper (1.35x)</button>
+            <button class="preset-btn" data-speed="1.50" data-label="Extreme">Extreme (1.50x)</button>
+          </div>
+        </div>
+
+        <div class="slider">
+          <label for="speed" data-i18n="speedLabel">Velocidad</label>
+          <input id="speed" type="range" min="0.50" max="2.00" step="0.01" value="1.25" data-i18n-aria-label="speedAriaLabel" aria-label="Velocidad de reproducción">
+          <span id="speedVal">1.25x</span>
+        </div>
+
+        <!-- Artwork Section (MP3 only) -->
+        <div class="artwork-container" id="artworkContainer" hidden="">
+          <label class="artwork-label" data-i18n="artworkLabel">Artwork de Portada (MP3)</label>
+          <div class="artwork-preview-container">
+            <div class="artwork-preview-wrapper">
+              <img id="artworkPreview" src="" alt="Artwork preview" class="artwork-preview">
+              <div class="artwork-loading" id="artworkLoading" data-i18n="artworkLoading">Cargando...</div>
+            </div>
+            <div class="artwork-controls">
+              <div class="artwork-tags-input-wrapper">
+                <label for="artworkTagsInput" class="artwork-tags-label" data-i18n="artworkTagsLabel">🏷️ Tags (opcional)</label>
+                <input type="text" id="artworkTagsInput" class="artwork-tags-input" placeholder="waifu, marin-kitagawa, maid, uniform" data-i18n-placeholder="artworkTagsPlaceholder" list="artwork-tags-suggestions">
+                <datalist id="artwork-tags-suggestions">
+                  <!-- SFW/Kawaii tags (verified working) -->
+                  <option value="waifu">
+                  </option><option value="maid">
+                  </option><option value="marin-kitagawa">
+                  </option><option value="mori-calliope">
+                  </option><option value="raiden-shogun">
+                  </option><option value="selfies">
+                  </option><option value="uniform">
+                </option></datalist>
+                <small class="artwork-tags-hint" data-i18n="artworkTagsHint">Separa múltiples tags con comas</small>
+              </div>
+              <button id="refreshArtworkBtn" class="artwork-btn" data-i18n="refreshArtworkBtn">🔄 Cambiar Imagen</button>
+              <label class="artwork-checkbox-label">
+                <input type="checkbox" id="includeArtworkCheckbox" checked="">
+                <span data-i18n="includeArtwork">Incluir Artwork</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button id="downloadWavBtn" data-i18n="downloadWav">Descargar WAV</button>
+          <button id="downloadMp3Btn" data-i18n="downloadMp3">Descargar MP3 (320kbps)</button>
+        </div>
+      </section>
+
+      <!-- Info Section: Concise and SEO-focused -->
+      <section class="info-section">
+        <h2 data-i18n="whatIsNightcore">¿Qué es Nightcore?</h2>
+        <p data-i18n="nightcoreDescription">Nightcore es un estilo musical que acelera canciones y aumenta su tono, creando un sonido más energético y agudo. Nacido en Noruega a principios de los 2000s, hoy es un género global popular en YouTube, SoundCloud y TikTok.</p>
+        
+        <h2 data-i18n="features">Características</h2>
+        <ul>
+          <li data-i18n="feature1">✨ Procesamiento en tiempo real • Escucha al instante</li>
+          <li data-i18n="feature2">🔒 100% privado • Todo se procesa en tu dispositivo</li>
+          <li data-i18n="feature3">💾 Descarga en WAV o MP3 • Alta calidad</li>
+          <li data-i18n="feature4">📱 Compatible móvil y PC • Sin instalación</li>
+          <li data-i18n="feature5">🆓 Completamente gratis • Sin límites ni registro</li>
+        </ul>
+
+        <h2 data-i18n="faq">Preguntas Frecuentes</h2>
+        
+        <h3 data-i18n="faqDaycore">¿Qué es daycore?</h3>
+        <p data-i18n="faqDaycoreAnswer">Daycore ralentiza las canciones (0.5x-0.8x) y baja el tono, creando un sonido más profundo y relajante. Puedes cambiar entre nightcore y daycore usando los botones de modo.</p>
+        
+        <h3 data-i18n="faqLegal">¿Es legal crear nightcore?</h3>
+        <p data-i18n="faqLegalAnswer">Para uso personal sí. Si planeas subirlo a YouTube o distribuirlo, necesitas derechos de autor. Muchos creadores usan el sistema Content ID de YouTube.</p>
+        
+        <h3 data-i18n="faqDistortion">¿Por qué suena distorsionado?</h3>
+        <p data-i18n="faqDistortionAnswer">Usa velocidades entre 1.20x-1.40x para mejores resultados. Evita velocidades superiores a 1.6x y usa archivos de buena calidad (mínimo 192kbps).</p>
+        
+        <h3 data-i18n="faqMobile">¿Funciona en móvil?</h3>
+        <p data-i18n="faqMobileAnswer">Sí, funciona perfectamente en cualquier dispositivo con navegador moderno. Todo el procesamiento ocurre localmente en tu dispositivo.</p>
+      </section>
+
+      <!-- Ko-fi Support Section -->
+      <section class="support-section">
+        <h2 data-i18n="supportTitle">¿Te gusta la herramienta?</h2>
+        <p data-i18n="supportText">Este proyecto es 100% gratis y siempre lo será. Si te gusta y quieres apoyar su desarrollo, puedes hacer una donación opcional a través de Ko-fi.</p>
+        <div class="kofi-button-wrapper">
+          <a href="https://ko-fi.com/djuwu" target="_blank" rel="noopener" class="kofi-button-embed" data-i18n="kofiButtonText" onclick="if(typeof trackEvent !== 'undefined') trackEvent('kofi_clicked', {'location': 'support_section'});">
+            Apoyar con Ko-fi
+          </a>
+        </div>
+      </section>
+    </main>
+
+  </div>
+
+  <div id="particles" aria-hidden="true"></div>
+
+  <footer class="footer">
+    <small>
+      <span data-i18n="footerMade">Hecho con amor por DJ UWU · Fondos por waifu.pics · © 2025</span><br>
+      <a href="privacy.html" rel="nofollow" data-i18n="footerPrivacy">Política de Privacidad</a> · 
+      <a href="terms.html" rel="nofollow" data-i18n="footerTerms">Términos de Uso</a> · 
+      <a href="contact.html" data-i18n="footerContact">Contacto</a>
+    </small>
+  </footer>
+
+  <!-- Cookie Banner -->
+  <div id="cookieBanner">
+    <div class="cookie-content">
+      <div class="cookie-text">
+        <h3 data-i18n="cookieTitle">🍪 Cookies y Analytics</h3>
+        <p>
+          <span data-i18n="cookieText">Usamos Cloudflare Analytics (sin cookies) y opcionalmente Google Analytics para entender cómo usas el sitio. ¿Permites Google Analytics?</span>
+          <a href="privacy.html" data-i18n="cookieMore">Más información</a>
+        </p>
+      </div>
+      <div class="cookie-buttons">
+        <button id="acceptCookies" data-i18n="cookieAccept">Aceptar Analytics</button>
+        <button id="rejectCookies" data-i18n="cookieReject">Solo esenciales</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" data-cf-beacon="{" version":"2024.11.0","token":"53384f9945c24c229cf2987f17416e17","r":1,"server_timing":{"name":{"cfcachestatus":true,"cfedge":true,"cfextpri":true,"cfl4":true,"cforigin":true,"cfspeedbrain":true},"location_startswith":null}}"="" crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9a0edfcadb6d6688',t:'MTc2MzU0NjU2OQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body></html>
