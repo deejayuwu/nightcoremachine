@@ -82,9 +82,9 @@
       <section class="hero-section">
         <h1 class="hero-title">Productor nightcore & creador de herramientas</h1>
         <p class="hero-subtitle">Edits rápidos, visuales kawaii y una app hecha para la comunidad.</p>
-        <div class="actions" style="justify-content:center; gap:12px;">
-          <a class="social-link" style="padding:12px 18px; background:var(--violet); color:white; border-radius:14px; text-decoration:none; font-weight:700;" href="machine.html">Probar Nightcore Machine</a>
-          <a class="social-link" style="padding:12px 18px; background:var(--pink); color:white; border-radius:14px; text-decoration:none; font-weight:700;" href="https://soundcloud.com/djuwu" target="_blank" rel="noopener">Escuchar en SoundCloud</a>
+        <div class="actions hero-actions">
+          <a class="cta-button cta-button--violet" href="machine.html">Probar Nightcore Machine</a>
+          <a class="cta-button cta-button--pink" href="https://soundcloud.com/djuwu" target="_blank" rel="noopener">Escuchar en SoundCloud</a>
         </div>
       </section>
 
@@ -120,14 +120,14 @@
         <h2>Conecta conmigo</h2>
         <p>¿Quieres una colaboración o feedback sobre tu track? Escríbeme o agenda una sesión rápida.</p>
         <div class="kofi-button-wrapper" style="gap:12px; display:flex; flex-wrap:wrap;">
-          <a href="contact.html" class="kofi-button-embed">Enviar mensaje</a>
-          <a href="machine.html" class="kofi-button-embed" style="background:var(--violet);">Abrir Nightcore Machine</a>
+          <a href="contact.html" class="contact-button">Enviar mensaje</a>
+          <a href="machine.html" class="cta-button cta-button--violet">Abrir Nightcore Machine</a>
         </div>
-        <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
-          <a class="social-link" href="https://twitter.com/deejayuwu" target="_blank" rel="noopener">Twitter</a>
-          <a class="social-link" href="https://instagram.com/deejayuwu" target="_blank" rel="noopener">Instagram</a>
-          <a class="social-link" href="https://soundcloud.com/djuwu" target="_blank" rel="noopener">SoundCloud</a>
-          <a class="social-link" href="https://ko-fi.com/djuwu" target="_blank" rel="noopener">Ko-fi</a>
+        <div class="social-button-group">
+          <a class="social-button" href="https://twitter.com/deejayuwu" target="_blank" rel="noopener">Twitter</a>
+          <a class="social-button" href="https://instagram.com/deejayuwu" target="_blank" rel="noopener">Instagram</a>
+          <a class="social-button" href="https://soundcloud.com/djuwu" target="_blank" rel="noopener">SoundCloud</a>
+          <a class="social-button" href="https://ko-fi.com/djuwu" target="_blank" rel="noopener">Ko-fi</a>
         </div>
       </section>
     </main>
@@ -140,4 +140,27 @@
       <a href="contact.html">Contacto</a>
     </small>
   </footer>
+  <script>
+    (function(){
+      const bg = document.getElementById('bg');
+      if(!bg) return;
+      const categories = ['waifu','neko','shinobu','megumin'];
+
+      async function loadWaifuBg(){
+        try{
+          const cat = categories[Math.floor(Math.random() * categories.length)];
+          const res = await fetch(`https://api.waifu.pics/sfw/${cat}`);
+          const data = await res.json();
+          if(data?.url){
+            bg.style.backgroundImage = `url('${data.url}')`;
+          }
+        }catch(e){
+          console.error('No se pudo cargar el fondo de waifu.pics', e);
+        }
+      }
+
+      loadWaifuBg();
+      setInterval(loadWaifuBg, 30000);
+    })();
+  </script>
 </body></html>

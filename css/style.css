@@ -212,6 +212,73 @@ body{
 .support-section .kofi-button-wrapper {
   margin-top: 8px;
 }
+.cta-button,
+.contact-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 30px;
+  background: linear-gradient(135deg, var(--pink), var(--violet));
+  color: #fff;
+  text-decoration: none;
+  border-radius: 16px;
+  font-weight: 700;
+  font-family: 'Poppins', system-ui, sans-serif;
+  border: 1px solid rgba(138, 108, 255, 0.25);
+  box-shadow: 0 6px 20px rgba(138, 108, 255, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+  letter-spacing: 0.01em;
+}
+.cta-button:hover,
+.contact-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 26px rgba(138, 108, 255, 0.45);
+  opacity: 0.95;
+}
+.cta-button:active,
+.contact-button:active {
+  transform: translateY(0);
+}
+.social-button-group {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.social-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  background: linear-gradient(135deg, rgba(255, 123, 192, 0.14), rgba(138, 108, 255, 0.14));
+  color: #5b4dd6;
+  border-radius: 14px;
+  border: 1px solid rgba(138, 108, 255, 0.25);
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'Poppins', system-ui, sans-serif;
+  box-shadow: 0 6px 18px rgba(138, 108, 255, 0.18);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, opacity 0.2s ease;
+  letter-spacing: 0.01em;
+}
+.social-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(138, 108, 255, 0.26);
+  background: linear-gradient(135deg, rgba(255, 155, 214, 0.22), rgba(138, 108, 255, 0.22));
+  opacity: 0.96;
+}
+.social-button:active {
+  transform: translateY(0);
+}
+.cta-button--violet {
+  background: linear-gradient(135deg, var(--violet), #a78bff);
+  border-color: rgba(90, 70, 210, 0.35);
+}
+.cta-button--pink {
+  background: linear-gradient(135deg, #ff9bd6, var(--pink));
+  border-color: rgba(255, 123, 192, 0.45);
+}
 .kofi-button-embed {
   display: inline-flex;
   align-items: center;
@@ -272,6 +339,15 @@ body{
   }
   .support-section p {
     font-size: 0.95rem;
+  }
+  .cta-button,
+  .contact-button {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+  .social-button {
+    width: 100%;
+    justify-content: center;
   }
   .kofi-button-embed {
     padding: 12px 24px;
@@ -732,11 +808,14 @@ body{
   }
 }
 
-.actions{ 
+.actions{
   margin-top:12px;
   display:flex;
   gap:12px;
   flex-wrap:wrap;
+}
+.hero-actions{
+  justify-content:center;
 }
 #downloadWavBtn, #downloadMp3Btn{
   background:linear-gradient(135deg,#ff9bd6,#b69cff);
