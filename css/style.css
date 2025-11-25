@@ -185,6 +185,10 @@ body{
   text-align: center;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
 }
 .support-section::before {
   content: '✨';
@@ -219,26 +223,20 @@ body{
   justify-content: center;
   gap: 8px;
 }
-.support-section h2::before {
-  content: '☕';
-  font-size: 1.8rem;
-}
 .support-section p {
   color: #555;
   line-height: 1.8;
-  margin-bottom: 24px;
   max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   font-size: 1rem;
 }
 .support-section .kofi-button-wrapper {
-  margin-top: 8px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
+  row-gap: 12px;
 }
 .cta-button,
 .contact-button {
@@ -268,11 +266,19 @@ body{
   transform: translateY(0);
 }
 .social-button-group {
-  margin-top: 12px;
+  margin-top: 6px;
   display: flex;
-  gap: 10px;
+  gap: 12px;
+  row-gap: 12px;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+}
+
+.kofi-link-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
 .social-button {
   display: inline-flex;
