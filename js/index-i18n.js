@@ -16,7 +16,7 @@
       socialTwitter: "Twitter",
       socialInstagram: "Instagram",
       socialSoundcloud: "SoundCloud",
-      kofiLink: "Invitar un Ko-fi",
+      kofiLink: "Invitar a un Ko-fi",
       footerText: "Portfolio de DJ UWU · © 2025",
       footerPrivacy: "Política de Privacidad",
       footerTerms: "Términos de Uso",

@@ -566,7 +566,8 @@ body{
   display: flex;
   flex-direction: column;
   gap: 3px;
-  align-items: flex-start;
+  align-items: center;
+  text-align: center;
 }
 
 .connect-label {
