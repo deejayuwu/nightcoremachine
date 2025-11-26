@@ -766,6 +766,14 @@ body{
   z-index: 1;
 }
 
+.video-kaomoji{
+  margin: 12px 0;
+  font-size: 1.35rem;
+  color: var(--link);
+  position: relative;
+  z-index: 1;
+}
+
 .video-frame-wrapper{
   margin-top: 24px;
   display: flex;
