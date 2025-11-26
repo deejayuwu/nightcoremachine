@@ -310,33 +310,58 @@ body{
 .social-button {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 12px 18px;
-  background: linear-gradient(135deg, color-mix(in srgb, var(--pink) 16%, var(--glass)), color-mix(in srgb, var(--violet) 16%, var(--glass)));
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--pink) 18%, var(--glass)), color-mix(in srgb, var(--violet) 18%, var(--glass)));
   color: var(--link);
-  border-radius: 14px;
+  border-radius: 16px;
   border: 1px solid var(--stroke);
   text-decoration: none;
   font-weight: 700;
   font-family: 'Poppins', system-ui, sans-serif;
-  box-shadow: 0 6px 18px var(--shadow);
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, opacity 0.2s ease;
+  box-shadow: 0 10px 24px var(--shadow);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease, opacity 0.2s ease;
   letter-spacing: 0.01em;
+  min-width: 240px;
+  position: relative;
+  overflow: hidden;
 }
 .social-icon {
-  width: 34px;
-  height: 34px;
+  width: 38px;
+  height: 38px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border-radius: 12px;
-  background: linear-gradient(135deg, color-mix(in srgb, var(--pink) 26%, var(--glass)), color-mix(in srgb, var(--violet) 26%, var(--glass)));
-  box-shadow: inset 0 1px 0 rgba(255,255,255,0.45), 0 4px 12px var(--shadow);
+  background: linear-gradient(135deg, color-mix(in srgb, var(--pink) 28%, var(--glass)), color-mix(in srgb, var(--violet) 28%, var(--glass)));
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.45), 0 6px 14px var(--shadow);
   font-size: 1.1rem;
+  border: 1px solid color-mix(in srgb, var(--stroke) 90%, transparent);
+}
+.social-icon svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 .social-label {
   letter-spacing: 0.02em;
+}
+.social-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+.social-hint {
+  font-size: 0.82rem;
+  color: var(--muted-text);
+  font-weight: 600;
+}
+.social-charm {
+  font-size: 1.1rem;
+  color: var(--violet);
+  filter: drop-shadow(0 4px 8px var(--shadow));
 }
 .social-button--twitter .social-icon {
   background: linear-gradient(135deg, color-mix(in srgb, #70d8ff 32%, var(--glass)), color-mix(in srgb, #a0c4ff 18%, var(--glass)));
@@ -349,9 +374,9 @@ body{
 }
 .social-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px var(--shadow);
-  background: linear-gradient(135deg, color-mix(in srgb, var(--pink) 24%, var(--glass)), color-mix(in srgb, var(--violet) 24%, var(--glass)));
-  opacity: 0.96;
+  box-shadow: 0 12px 30px var(--shadow);
+  background: linear-gradient(135deg, color-mix(in srgb, var(--pink) 24%, var(--glass)), color-mix(in srgb, var(--violet) 26%, var(--glass)));
+  opacity: 0.98;
 }
 .social-button:active {
   transform: translateY(0);
@@ -432,7 +457,7 @@ body{
   }
   .social-button {
     width: 100%;
-    justify-content: center;
+    justify-content: flex-start;
   }
   .kofi-button-embed {
     padding: 12px 24px;
