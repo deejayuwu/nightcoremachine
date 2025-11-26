@@ -11,7 +11,6 @@
       videoHeading: "Video destacado",
       videoDescription: "Un edit kawaii con la vibra nightcore del canal.",
       connectHeading: "Conecta conmigo",
-      connectIntro: "¿Quieres una colaboración o feedback sobre tu track? Escríbeme o agenda una sesión rápida.",
       contactCta: "Enviar mensaje",
       openMachineCta: "Abrir Nightcore Machine",
       socialTwitter: "Twitter",
@@ -34,7 +33,6 @@
       videoHeading: "Featured video",
       videoDescription: "A kawaii edit with the nightcore vibe from the channel.",
       connectHeading: "Connect with me",
-      connectIntro: "Want a collab or feedback on your track? Message me or book a quick session.",
       contactCta: "Send message",
       openMachineCta: "Open Nightcore Machine",
       socialTwitter: "Twitter",
@@ -51,7 +49,7 @@
   const textIds = [
     "heroTitle","heroSubtitle","heroCtaMachine","heroCtaSoundcloud",
     "videoHeading","videoDescription",
-    "connectHeading","connectIntro","contactCta","openMachineCta",
+    "connectHeading","contactCta","openMachineCta",
     "socialTwitter","socialInstagram","socialSoundcloud","kofiLink",
     "footerText","footerPrivacy","footerTerms","footerContact"
   ];
