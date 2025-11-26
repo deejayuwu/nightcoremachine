@@ -122,15 +122,21 @@ body{
   box-shadow: 0 8px 24px rgba(138,108,255,0.28);
 }
 .topbar-cta--ghost{
-  background: rgba(255,255,255,0.8);
+  background: color-mix(in srgb, var(--glass-strong) 70%, var(--bg2));
   color: var(--link) !important;
-  border: 1px solid rgba(138,108,255,0.25);
+  border: 1px solid color-mix(in srgb, var(--stroke) 85%, transparent);
   box-shadow: none;
 }
 .topbar-cta--ghost:hover{
   background: linear-gradient(135deg, color-mix(in srgb, var(--pink) 18%, var(--glass)), color-mix(in srgb, var(--violet) 18%, var(--glass)));
   color: var(--link);
   box-shadow: 0 6px 18px var(--shadow);
+}
+[data-theme="dark"] .topbar-cta--ghost,
+.dark .topbar-cta--ghost{
+  background: color-mix(in srgb, var(--glass-strong) 65%, var(--bg1));
+  color: var(--text) !important;
+  border-color: color-mix(in srgb, var(--stroke) 95%, var(--glass));
 }
 
 /* Language Toggle Button */
