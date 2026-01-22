@@ -1,0 +1,26 @@
+{
+  "name": "nightcoremachine",
+  "version": "1.0.0",
+  "description": "Create **nightcore** and **daycore** audio effects online, instantly and for free. All processing happens locally on your device—100% private, no registration required.",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://local_proxy@127.0.0.1:62088/git/deejayuwu/nightcoremachine"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vitest/coverage-v8": "^4.0.18",
+    "@vitest/ui": "^4.0.18",
+    "happy-dom": "^20.3.4",
+    "jsdom": "^27.4.0",
+    "vitest": "^4.0.18"
+  }
+}
